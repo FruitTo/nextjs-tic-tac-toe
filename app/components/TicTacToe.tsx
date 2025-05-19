@@ -35,7 +35,7 @@ const TicTacToe = () => {
 
   const [line, setLine] = useState(["", "", "", "", ""]);
 
-  const strikeLine = (winCon:any) => {
+  const strikeLine = (winCon:number[]) => {
     if (winCon.join() == win[0].join()) {
       setLine(["1", "full", "2/12", "0", "0"]);
     } else if (winCon.join() == win[1].join()) {
@@ -55,7 +55,7 @@ const TicTacToe = () => {
     }
   };
 
-  const checkWiner = (newTile:any) => {
+  const checkWiner = (newTile:string[]) => {
     for (let i = 0; i < win.length; i++) {
       if (
         newTile[win[i][0]] == playerX &&

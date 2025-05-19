@@ -1,7 +1,7 @@
 import Tile from "./Tile";
 import Line from "./line";
 
-function Board({tiles, click, line}:any) {
+function Board({tiles, click, line}:{tiles:string[],click:(index:number)=>void,line:string[]}) {
   return (
     <div className="relative">
       <Line line={line}/>

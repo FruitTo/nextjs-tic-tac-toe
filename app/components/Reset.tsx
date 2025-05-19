@@ -1,4 +1,4 @@
-function Reset({reset}:any) {
+function Reset({reset}:{reset:()=>void}) {
   return (
     <div className="flex justify-center items-center">
       <button onClick={reset} className="border-3 rounded-md mt-7 p-2 bg-[#ECEFCA] drop-shadow-2xl">

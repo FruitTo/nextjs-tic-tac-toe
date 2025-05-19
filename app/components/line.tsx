@@ -1,4 +1,4 @@
-const Line = ({ line }: any) => {
+const Line = ({ line }:{line:string[]}) => {
   console.log(line);
   let h = "0";
   let w = "0";
