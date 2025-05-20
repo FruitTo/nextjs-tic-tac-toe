@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
+const repo = 'nextjs-tic-tac-toe';
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  // output: 'export',
-  // basePath: '/tic-tac-toe-game',
-  // assetPrefix: '/tic-tac-toe-game',
+  output: 'export',
+  distDir: 'build',
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}`,
+  trailingSlash: true,
 };
+
 
 export default nextConfig;
