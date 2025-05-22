@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  basePath: '/tic-tac-toe',
-  trailingSlash: true
+  // output: 'export',
+  // basePath: '/tic-tac-toe',
+  // trailingSlash: true
 };
 
 
